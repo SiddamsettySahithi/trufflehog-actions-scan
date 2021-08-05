@@ -15,5 +15,4 @@ if [ -n "${INPUT_BRANCH}" ]; then
   args="${args} --branch ${INPUT_BRANCH}"
 fi
 
-cp /regexes.json .
 /usr/local/bin/trufflehog3 ${args} .
