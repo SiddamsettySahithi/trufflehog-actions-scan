@@ -2,7 +2,7 @@
 
 set -e # Abort script at first error
 
-args=" --rules=regexes.json --no-entropy --format=html --output=secrets.html " # Default trufflehog options
+args=" --no-entropy --format=html --output=secrets.html " # Default trufflehog options
 
 # By default the 'WORKDIR' of our Docker image is set to the 'GITHUB_WORKSPACE'
 # which is mounted into our image. This means, as long as a checkout action was
