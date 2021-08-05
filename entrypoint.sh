@@ -2,7 +2,7 @@
 
 set -e # Abort script at first error
 
-args=" --no-entropy --max_depth=50" # Default trufflehog options
+args=" --no-entropy " # Default trufflehog options
 
 if [ -n "${INPUT_SCANARGUMENTS}" ]; then
   args="${INPUT_SCANARGUMENTS}" # Overwrite if new options string is provided
