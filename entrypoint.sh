@@ -15,4 +15,4 @@ if [ -n "${INPUT_BRANCH}" ]; then
   args="${args} --branch ${INPUT_BRANCH}"
 fi
 
-/usr/local/bin/trufflehog3 ${args} .
+/usr/local/bin/trufflehog ${args} .
