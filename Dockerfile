@@ -16,7 +16,7 @@ LABEL "com.github.actions.icon"="shield"
 LABEL "com.github.actions.color"="yellow"
 
 RUN pip install gitdb2==3.0.0 
-RUN pip install truffleHog3
+RUN pip install truffleHog
 RUN apk --update add git less openssh && \
   rm -rf /var/lib/apt/lists/* && \
   rm /var/cache/apk/*
